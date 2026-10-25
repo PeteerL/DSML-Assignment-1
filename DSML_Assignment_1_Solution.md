@@ -368,7 +368,7 @@ The predictions on the training inputs depend only on $(\alpha,\beta)$. The map 
 
 **The three coefficients cannot be uniquely recovered** from observations restricted to this input line. At best, the data determine $\alpha$ and $\beta$. Every $\theta$ with the same $(\alpha,\beta)$ fits the data identically.
 
-The data do determine the best $(\alpha,\beta)$ uniquely, by simple regression of $y$ on $x_1$: $\alpha=S_{xy}/S_{xx}=15/10=1.5$ and $\beta=\bar y-\alpha\bar x=4.8-4.5=0.3$. The residuals are $(0.2,-0.3,0.2,-0.3,0.2)$, so the minimum MSE is $0.06$ (not zero). The set of minimizers is the line
+The data do determine the best $(\alpha,\beta)$ uniquely, by simple regression of $y$ on $x_1$: $\alpha=S_{xy}/S_{xx}=15/10=1.5$ and $\beta=\bar y-\alpha\bar x=4.8-4.5=0.3$. The residuals $r_i=\hat y_i-y_i$ are $(-0.2,0.3,-0.2,0.3,-0.2)$, so the minimum MSE is $0.06$ (not zero). The set of minimizers is the line
 $$\theta(t)=(0.9,\,0.6,\,-0.3)+t\,(1,-1,1),\qquad t\in\mathbb R.$$
 
 #### Task 3B.2: Implementing and fitting the model
